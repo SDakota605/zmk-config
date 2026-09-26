@@ -36,10 +36,10 @@
         nav_layer {
             display-name = "NAV";
             bindings = <
-&trans    &trans     &mkp RCLK       &mmv MOVE_UP    &mkp LCLK        &trans    &kp HOME        &kp PG_DN       &kp PG_UP     &kp END    &trans  &kp BACKSPACE
-&kp CAPS  &kp LC(A)  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &trans  &kp DEL
-&trans    &kp LC(Z)  &kp LC(X)       &kp LC(C)       &kp LC(V)        &trans    &trans          &trans          &trans        &trans     &trans  &trans
-                                     &trans          &trans           &trans    &trans          &trans          &kp LEFT_GUI
+&trans    &trans     &mkp RCLK       &mmv MOVE_UP    &mkp LCLK        &trans         &kp HOME        &kp PG_DN       &kp PG_UP     &kp END    &trans  &kp BACKSPACE
+&kp CAPS  &kp LC(A)  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp LA(TAB)    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &trans  &kp DEL
+&trans    &kp LC(Z)  &kp LC(X)       &kp LC(C)       &kp LC(V)        &trans         &trans          &trans          &trans        &trans     &trans  &trans
+                                     &trans          &trans           &trans         &trans          &trans          &kp LEFT_GUI
             >;
         };
 
