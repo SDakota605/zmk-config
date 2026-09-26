@@ -1,11 +1,15 @@
 manifest:
+  defaults:
+    # Pinned to a tagged release. Tracking `main` broke on 2026-09-25:
+    # ZMK's board definitions moved and `nice_nano_v2` stopped resolving
+    # ("Invalid BOARD"). Bump this tag deliberately, not by accident.
+    revision: v0.3
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: main
       import: app/west.yml
   self:
     path: config
