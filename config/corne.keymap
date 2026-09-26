@@ -46,10 +46,10 @@
         sym_layer {
             display-name = "SYM";
             bindings = <
-&kp TILDE  &kp EXCL       &kp AT          &kp HASH  &kp DLLR   &kp PRCNT    &kp CARET  &kp AMPS   &kp STAR           &kp LPAR         &kp RPAR   &kp BSPC
-&kp GRAVE  &kp BACKSLASH  &kp LEFT_BRACE  &kp LBKT  &kp UNDER  &kp MINUS    &kp PLUS   &kp EQUAL  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp SLASH  &trans
-&trans     &trans         &trans          &trans    &trans     &trans       &trans     &trans     &trans             &trans           &trans     &trans
-                                          &trans    &trans     &trans       &trans     &trans     &trans
+&kp TILDE      &kp EXCL        &kp AT            &kp HASH              &kp DLLR       &kp PRCNT    &kp CARET  &kp AMPS          &kp STAR               &kp LPAR           &kp RPAR         &kp BSPC
+&kp BACKSLASH  &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp UNDER      &kp MINUS    &kp PLUS   &kp EQUAL         &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp SLASH
+&trans         &trans          &trans            &trans                &kp LESS_THAN  &trans       &trans     &kp GREATER_THAN  &trans                 &trans             &trans           &trans
+                                                 &trans                &trans         &trans       &trans     &trans            &trans
             >;
         };
 
@@ -66,10 +66,10 @@
         fun_layer {
             display-name = "FUN";
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR    &kp F9      &kp F10   &kp F11     &kp F12     &kp PSCRN     &trans
-&out OUT_USB  &out OUT_BLE  &trans        &trans        &trans        &trans        &kp C_PREV  &kp C_PP  &kp C_NEXT  &kp C_MUTE  &kp C_VOL_UP  &trans
-&bootloader   &sys_reset    &trans        &trans        &trans        &trans        &trans      &trans    &trans      &trans      &kp C_VOL_DN  &trans
-                                          &trans        &trans        &trans        &trans      &trans    &trans
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &bt BT_CLR    &kp F9      &kp F10   &kp F11     &kp F12     &kp PSCRN     &trans
+&out OUT_USB  &out OUT_BLE  &trans        &trans        &studio_unlock  &trans        &kp C_PREV  &kp C_PP  &kp C_NEXT  &kp C_MUTE  &kp C_VOL_UP  &trans
+&bootloader   &sys_reset    &trans        &trans        &trans          &trans        &trans      &trans    &trans      &trans      &kp C_VOL_DN  &trans
+                                          &trans        &trans          &trans        &trans      &trans    &trans
             >;
         };
     };
