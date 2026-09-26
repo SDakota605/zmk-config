@@ -3,4 +3,8 @@ on: [push, pull_request, workflow_dispatch]
 
 jobs:
   build:
-    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+    # Must stay on the SAME ref as `revision:` in config/west.yml.
+    # The @main workflow has post-build steps from ZMK's Zephyr 4.1 / board-variant
+    # era and fails against v0.3 (CONFIG_ZMK_BOARD_COMPAT, KeyError: 'qualifiers')
+    # even though the firmware itself compiles fine.
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@v0.3
