@@ -48,7 +48,7 @@
             bindings = <
 &kp TILDE      &kp EXCL        &kp AT            &kp HASH              &kp DLLR       &kp PRCNT    &kp CARET  &kp AMPS          &kp STAR               &kp LPAR           &kp RPAR         &kp BSPC
 &kp BACKSLASH  &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp UNDER      &kp MINUS    &kp PLUS   &kp EQUAL         &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp SLASH
-&trans         &trans          &trans            &trans                &kp LESS_THAN  &trans       &trans     &kp GREATER_THAN  &trans                 &trans             &trans           &trans
+&trans         &trans          &trans            &trans                &kp LESS_THAN  &kp PIPE     &trans     &kp GREATER_THAN  &trans                 &trans             &trans           &trans
                                                  &trans                &trans         &trans       &trans     &trans            &trans
             >;
         };
